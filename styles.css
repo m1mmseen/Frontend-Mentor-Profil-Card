@@ -26,12 +26,19 @@ html {
 
 body {
     box-sizing: border-box;
-;
+    overflow: hidden;
     margin: 0;
     min-height: 100vh;
     font-family: kumbh, sans-serif;
     font-size: 14px;
     color: var(--very-dark-desaturated-blue);
+    background-color: var(--dark-cyan);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 35vh, left 50vw top 50vh;
+
+
+
 }
 
 main {
@@ -39,24 +46,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-#top-bubble {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    top: -5%;
-    left: -5px;
 }
 
-#bottom-bubble {
-    position: absolute;
-    width: 50%;
-    height: auto;
-    bottom: -10px;
-    right: -20px;
-    z-index: -1;
-}
 
 h1, h2, h3 {
     margin: 0;
