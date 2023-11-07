@@ -1,0 +1,145 @@
+@Font-Face {
+    font-family: kumbh;
+    src: url("fonts/KumbhSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@Font-Face {
+    font-family: kumbh;
+    src: url("fonts/KumbhSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --white: hsl(0, 0%, 99%)
+}
+
+
+html {
+    margin: 0;
+    background-color: var(--dark-cyan);
+}
+
+body {
+    box-sizing: border-box;
+;
+    margin: 0;
+    min-height: 100vh;
+    font-family: kumbh, sans-serif;
+    font-size: 14px;
+    color: var(--very-dark-desaturated-blue);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#top-bubble {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: -5%;
+    left: -5px;
+}
+
+#bottom-bubble {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    bottom: -10px;
+    right: -20px;
+    z-index: -1;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    color: var(--dark-grayish-blue);
+    font-size: .7rem;
+    letter-spacing: .1rem;
+}
+
+#age {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    padding-left: .2rem;
+}
+
+#city {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.profile-card {
+    position: relative;
+    width: 300px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    height: 60%;
+}
+
+.profile-header {
+    height: 30%;
+    position: relative;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-cyan); /* Placeholder in case image fails to load */
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-info {
+    margin-top: 80px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid hsl(0, 0%, 90%);
+    position: absolute;
+    bottom: 8%;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.profile-stats h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.profile-stats p {
+    margin-top: .1rem;
+}
+
+.profile-stats div {
+    text-align: center;
+}
+
+
+
+
